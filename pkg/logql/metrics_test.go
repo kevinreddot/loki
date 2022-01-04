@@ -76,7 +76,7 @@ func TestLogSlowQuery(t *testing.T) {
 	}, "200", stats.Result{
 		Summary: stats.Summary{
 			BytesProcessedPerSecond: 100000,
-			ExecTime:                25.25,
+			ExecTime:                25250000000,
 			TotalBytesProcessed:     100000,
 		},
 	}, logqlmodel.Streams{logproto.Stream{Entries: make([]logproto.Entry, 10)}})
